@@ -21,9 +21,6 @@ public enum PizzaType {
         return price;
     }
 
-    public String getPizzaName(){
-        return this.name();
-    }
 
     @Override
     public String toString() {
