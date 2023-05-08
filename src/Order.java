@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    public static final int serviceFee = 10;
+    public static final short serviceFee = 10;
     private List<Pizza> pizzas = new ArrayList<>();
-    private List<Sauce> sauces;
-    private List<Drink> drinks;
+    private List<Sauce> sauces = new ArrayList<>();
+    private List<Drink> drinks = new ArrayList<>();
 
     public Order() {
 
