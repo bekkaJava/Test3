@@ -2,14 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    private List<Pizza> pizzas;
+    public static final int serviceFee = 10;
+    private List<Pizza> pizzas = new ArrayList<>();
     private List<Sauce> sauces;
     private List<Drink> drinks;
 
     public Order() {
-        pizzas = new ArrayList<>();
-        sauces = new ArrayList<>();
-        drinks = new ArrayList<>();
+
     }
 
     public void addPizza(Pizza pizza) {
@@ -66,7 +65,7 @@ public class Order {
         }
 
         if (pizzas.size() > 1) {
-            totalAmount -= (pizzas.size() * Pizza.serviceFee) - Pizza.serviceFee;
+            totalAmount -= (pizzas.size() * serviceFee) - serviceFee;
         }
         System.out.print("Thank you for our service, Total_Amount is: ");
         return totalAmount;

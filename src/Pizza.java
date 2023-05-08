@@ -1,12 +1,11 @@
 public class Pizza {
     private int amount;
     private PizzaType pizzaType;
-    public static final int serviceFee = 10;
 
 
     Pizza(PizzaType pizza) {
         this.pizzaType = pizza;
-        this.amount = pizza.getPrice() + serviceFee;
+        this.amount = pizza.getPrice() + Order.serviceFee;
     }
 
 
