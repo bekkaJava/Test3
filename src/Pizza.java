@@ -5,7 +5,7 @@ public class Pizza {
 
     Pizza(PizzaType pizza) {
         this.pizzaType = pizza;
-        this.amount = pizza.getPrice() + Order.serviceFee;
+        this.amount = pizza.getPrice() + Order.getServiceFee();
     }
 
 

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    public static final short serviceFee = 10;
+    private static final short serviceFee = 10;
     private List<Pizza> pizzas = new ArrayList<>();
     private List<Sauce> sauces = new ArrayList<>();
     private List<Drink> drinks = new ArrayList<>();
@@ -70,6 +70,10 @@ public class Order {
         System.out.print("Thank you for our service, Total_Amount is: ");
         return totalAmount;
 
+    }
+
+    public static short getServiceFee() {
+        return serviceFee;
     }
 
     @Override
